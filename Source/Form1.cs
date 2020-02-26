@@ -16,6 +16,42 @@ namespace astranomija
             kepler.Select();
         }
 
+        void combobox_clear()
+        {
+            comboBox1.Items.Clear();
+            comboBox1.Text = null;
+            comboBox3.Items.Clear();
+            comboBox3.Text = null;
+            comboBox5.Items.Clear();
+            comboBox5.Text = null;
+            comboBox7.Items.Clear();
+            comboBox7.Text = null;
+
+            comboBox2.Items.Clear();
+            comboBox2.Text = null;
+            comboBox4.Items.Clear();
+            comboBox4.Text = null;
+            comboBox6.Items.Clear();
+            comboBox6.Text = null;
+            comboBox8.Items.Clear();
+            comboBox8.Text = null;
+            comboBox10.Items.Clear();
+            comboBox10.Text = null;
+        }
+
+        void combobox_zeroitem()
+        {
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
+            comboBox4.SelectedIndex = 0;
+            comboBox5.SelectedIndex = 0;
+            comboBox6.SelectedIndex = 0;
+            comboBox7.SelectedIndex = 0;
+            comboBox8.SelectedIndex = 0;
+            comboBox10.SelectedIndex = 0;
+        }
+
         void clear_Click(object sender, EventArgs e)
         {
             metroTextBox1.Text = null;
@@ -61,14 +97,137 @@ namespace astranomija
                 bool v9 = double.TryParse(metroTextBox9.Text, out E);
                 bool v10 = double.TryParse(metroTextBox10.Text, out h);
                 bool v11 = double.TryParse(metroTextBox11.Text, out M);
-                //bool v12 = double.TryParse(metroTextBox12.Text, out );
                 bool v13 = int.TryParse(metroTextBox13.Text, out n);
 
                 M = M * Pow(10, n);
 
-
                 try
                 {
+                    if (comboBox1.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox1.SelectedIndex == 1)
+                    {
+                        a = a * 1000;
+                    }
+                    else if (comboBox1.SelectedIndex == 2)
+                    {
+                        a = a * 149597870700;
+                    }
+
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox2.SelectedIndex == 1)
+                    {
+                        V0 = V0 * 1000;
+                    }
+                    else if (comboBox2.SelectedIndex == 2)
+                    {
+                        V0 = V0 * 3.6;
+                    }
+
+                    if (comboBox3.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox3.SelectedIndex == 1)
+                    {
+                        T = T * 3600;
+                    }
+                    else if (comboBox3.SelectedIndex == 2)
+                    {
+                        T = T * 86164;
+                    }
+                    else if (comboBox3.SelectedIndex == 3)
+                    {
+                        T = T * 31556925.9747;
+                    }
+
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox4.SelectedIndex == 1)
+                    {
+                        VQ = VQ * 1000;
+                    }
+                    else if (comboBox4.SelectedIndex == 2)
+                    {
+                        VQ = VQ * 3.6;
+                    }
+                    else if (comboBox4.SelectedIndex == 3)
+                    {
+
+                    }
+
+                    if (comboBox5.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox5.SelectedIndex == 1)
+                    {
+                        Q = Q * 1000;
+                    }
+                    else if (comboBox5.SelectedIndex == 2)
+                    {
+                        Q = Q * 149597870700;
+                    }
+
+                    if (comboBox6.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox6.SelectedIndex == 1)
+                    {
+                        Vq = Vq * 1000;
+                    }
+                    else if (comboBox6.SelectedIndex == 2)
+                    {
+                        Vq = Vq * 3.6;
+                    }
+
+                    if (comboBox7.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox7.SelectedIndex == 1)
+                    {
+                        q = q * 1000;
+                    }
+                    else if (comboBox7.SelectedIndex == 2)
+                    {
+                        q = q * 149597870700;
+                    }
+
+                    if (comboBox8.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox8.SelectedIndex == 1)
+                    {
+                        Vh = Vh * 1000;
+                    }
+                    else if (comboBox8.SelectedIndex == 2)
+                    {
+                        Vh = Vh * 3.6;
+                    }
+
+                    if (comboBox7.SelectedIndex == 0)
+                    {
+
+                    }
+                    else if (comboBox7.SelectedIndex == 1)
+                    {
+                        h = h * 1000;
+                    }
+                    else if (comboBox7.SelectedIndex == 2)
+                    {
+                        h = h * 149597870700;
+                    }
+
                     if (T == 0)
                     {
                         if (a != 0 & M != 0)
@@ -150,6 +309,17 @@ namespace astranomija
                         }
                     }
 
+                    if (M == 0)
+                    {
+                        if (a != 0 & T != 0)
+                        {
+                            M = (4 * Pow(PI, 2) * Pow(a, 3)) / (Pow(T, 2) * G);
+                            int k = (int)Math.Log10(Round(M)) + 1;
+                            metroTextBox11.Text = Convert.ToString(Round(M / Pow(10, (k - 1)), 5));
+                            metroTextBox13.Text = Convert.ToString(k);
+                        }
+                    }
+
                     if (V0 == 0)
                     {
                         if (a != 0 & T != 0)
@@ -179,29 +349,19 @@ namespace astranomija
 
                     if (Vh == 0)
                     {
-                        if (h != 0 & h < Q)
+                        if (a != 0 & M != 0 & h != 0)
                         {
-                            if (a != 0 & M != 0)
-                            {
-                                Vh = Sqrt(G * M * (2 / h - 1 / a));
-                                metroTextBox6.Text = Convert.ToString(Round(Vq, 5));
-                            }
-                        }
-                        else
-                        {
-                            errormessage("h");
+                            Vh = Sqrt(G * M * (2 / h - 1 / a));
+                            metroTextBox8.Text = Convert.ToString(Round(Vq, 5));
                         }
                     }
 
                     if (h == 0)
                     {
-                        if (h != 0 & h < Q)
+                        if (M != 0 & a != 0 & Vh != 0)
                         {
-                            if (M != 0 & a != 0 & Vh != 0)
-                            {
-                                h = 2 * G * M * a / (Pow(Vh, 2) + G * M);
-                                metroTextBox10.Text = Convert.ToString(Round(h, 5));
-                            }
+                            h = 2 * G * M * a / (Pow(Vh, 2) + G * M);
+                            metroTextBox10.Text = Convert.ToString(Round(h, 5));
                         }
                     }
                 }
@@ -235,7 +395,6 @@ namespace astranomija
                 M1 = M1 * Pow(10, n1);
                 M2 = M2 * Pow(10, n2);
 
-
                 if (comboBox1.SelectedIndex == 0)
                 {
 
@@ -243,12 +402,109 @@ namespace astranomija
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     a1 = a1 * 1000;
-                   // metroTextBox1.Text = Convert.ToString(Round(a1 * 1000, 5));
                 }
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     a1 = a1 * 149597870700;
-                  //  metroTextBox1.Text = Convert.ToString(Round(a1 * 149597870700, 5));
+                }
+
+                if (comboBox2.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox2.SelectedIndex == 1)
+                {
+                    a2 = a2 * 1000;
+                }
+                else if (comboBox2.SelectedIndex == 2)
+                {
+                    a2 = a2 * 149597870700;
+                }
+
+                if (comboBox3.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox3.SelectedIndex == 1)
+                {
+                    T1 = T1 * 3600;
+                }
+                else if (comboBox3.SelectedIndex == 2)
+                {
+                    T1 = T1 * 86164;
+                }
+                else if (comboBox3.SelectedIndex == 3)
+                {
+                    T1 = T1 * 31556925.9747;
+                }
+
+                if (comboBox4.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox4.SelectedIndex == 1)
+                {
+                    T2 = T2 * 3600;
+                }
+                else if (comboBox4.SelectedIndex == 2)
+                {
+                    T2 = T2 * 86164;
+                }
+                else if (comboBox4.SelectedIndex == 3)
+                {
+                    T2 = T2 * 31556925.9747;
+                }
+
+                if (comboBox5.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox5.SelectedIndex == 1)
+                {
+                    Q1 = Q1 * 1000;
+                }
+                else if (comboBox5.SelectedIndex == 2)
+                {
+                    Q1 = Q1 * 149597870700;
+                }
+
+                if (comboBox6.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox6.SelectedIndex == 1)
+                {
+                    Q2 = Q2 * 1000;
+                }
+                else if (comboBox6.SelectedIndex == 2)
+                {
+                    Q2 = Q2 * 149597870700;
+                }
+
+                if (comboBox7.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox7.SelectedIndex == 1)
+                {
+                    q1 = q1 * 1000;
+                }
+                else if (comboBox7.SelectedIndex == 2)
+                {
+                    q1 = q1 * 149597870700;
+                }
+
+                if (comboBox8.SelectedIndex == 0)
+                {
+
+                }
+                else if (comboBox8.SelectedIndex == 1)
+                {
+                    q2 = q2 * 1000;
+                }
+                else if (comboBox8.SelectedIndex == 2)
+                {
+                    q2 = q2 * 149597870700;
                 }
 
                 try
@@ -413,15 +669,17 @@ namespace astranomija
                     {
                         if (a1 != 0 & T1 != 0)
                         {
-                            M1 = (4 * Pow(PI, 2) * Pow(a1, 3)) / Pow(T1, 2) / G;
-                            metroTextBox11.Text = Convert.ToString(Round(M1, 5));
+                            M1 = (4 * Pow(PI, 2) * Pow(a1, 3)) / (Pow(T1, 2) * G);
+                            int n = (int)Math.Log10(Round(M1)) + 1;
+                            metroTextBox11.Text = Convert.ToString(Round(M1 / Pow(10, (n - 1)), 5));
+                            metroTextBox13.Text = Convert.ToString(n);
                         }
 
                         if (a1 != 0 & a2 != 0 & M2 != 0)
                         {
                             M1 = M2 * a2 / a1;
-                            double n = Convert.ToString(Round(M1)).Length;
-                            metroTextBox11.Text = Convert.ToString(Round(n / ((n - 1) * 10), 5));
+                            int n = (int)Math.Log10(Round(M1)) + 1;
+                            metroTextBox11.Text = Convert.ToString(Round(M1 / Pow(10, (n - 1)), 5));
                             metroTextBox13.Text = Convert.ToString(n);
                         }
                     }
@@ -431,15 +689,17 @@ namespace astranomija
                         if (a2 != 0 & T2 != 0)
                         {
                             M2 = (4 * Pow(PI, 2) * Pow(a2, 3)) / Pow(T2, 2) / G;
-                            metroTextBox12.Text = Convert.ToString(Round(M2, 5));
+                            int n = (int)Math.Log10(Round(M1)) + 1;
+                            metroTextBox12.Text = Convert.ToString(Round(M2 / Pow(10, n - 1), 5));
+                            metroTextBox14.Text = Convert.ToString(n);
                         }
 
                         if (a1 != 0 & a2 != 0 & M1 != 0)
                         {
                             M2 = M1 * a1 / a2;
-                            double k = Convert.ToString(Round(M2)).Length;
-                            metroTextBox12.Text = Convert.ToString(Round(k / ((k - 1) * 10), 5));
-                            metroTextBox14.Text = Convert.ToString(k);
+                            int n = (int)Math.Log10(Round(M1)) + 1;
+                            metroTextBox12.Text = Convert.ToString(Round(M1 / Pow(10, n - 1), 5));
+                            metroTextBox14.Text = Convert.ToString(n);
                         }
                     }
 
@@ -463,20 +723,15 @@ namespace astranomija
 
             if (dopler.Checked)
             {
-                double z, lambda, lambda0, Vr, H, T;
-
-                z = 0;
-                lambda = 0;
-                lambda0 = 0;
-                Vr = 0;
-                H = 0;
-                T = 0;
+                double z, lambda, lambda0, Vr, H, T, r;
 
                 bool v1 = double.TryParse(metroTextBox1.Text, out lambda);
+                double.TryParse(metroTextBox2.Text, out r);
                 bool v2 = double.TryParse(metroTextBox3.Text, out lambda0);
                 bool v3 = double.TryParse(metroTextBox5.Text, out T);
                 bool v4 = double.TryParse(metroTextBox7.Text, out Vr);
                 bool v5 = double.TryParse(metroTextBox11.Text, out z);
+                bool v6 = double.TryParse(metroTextBox13.Text, out H);
 
                 lambda = lambda * Pow(10, -9);
                 lambda0 = lambda0 * Pow(10, -9);
@@ -485,12 +740,6 @@ namespace astranomija
                 {
                     if (lambda == 0)
                     {
-                        if (T != 0)
-                        {
-                            lambda = b / T;
-                            metroTextBox1.Text = Convert.ToString(Round(lambda, 5));
-                        }
-
                         if (lambda != 0 & lambda0 != 0)
                         {
                             lambda = (lambda0 * (1 + z)) / z;
@@ -498,11 +747,10 @@ namespace astranomija
                         }
                     }
 
-                    if (T == 0 & lambda != 0)
+                    if (T == 0 & lambda0 != 0)
                     {
-                        T = b / lambda;
-                        double k = Convert.ToString(T).Length;
-                        metroTextBox5.Text = Convert.ToString(Round(k / ((k - 1) * 10), 5) + " * 10^ " + k);
+                        T = b / lambda0;
+                        metroTextBox5.Text = Convert.ToString(Round(T, 5));
                     }
 
                     if (z == 0 & Vr != 0)
@@ -511,10 +759,19 @@ namespace astranomija
                         metroTextBox9.Text = Convert.ToString(Round(z, 5));
                     }
 
-                    if (Vr == 0 & z != 0)
+                    if (Vr == 0)
                     {
-                        Vr = z * c;
-                        metroTextBox7.Text = Convert.ToString(Round(Vr, 5));
+                        if (z != 0)
+                        {
+                            Vr = z * c;
+                            metroTextBox7.Text = Convert.ToString(Round(Vr, 5));
+                        }
+
+                        if (H != 0 & r != 0)
+                        {
+                            Vr = H * r;
+                            metroTextBox7.Text = Convert.ToString(Round(Vr, 5));
+                        }
                     }
 
                     if (z == 0 & lambda != 0 & lambda0 != 0)
@@ -523,10 +780,25 @@ namespace astranomija
                         metroTextBox9.Text = Convert.ToString(Round(z, 5));
                     }
 
-                    if (lambda0 == 0 & lambda != 0 & z != 0)
+                    if (lambda0 == 0)
                     {
-                        lambda0 = (z * lambda) / (1 + z);
-                        metroTextBox3.Text = Convert.ToString(Round(lambda0, 5));
+                        if (T != 0)
+                        {
+                            lambda0 = b / T;
+                            metroTextBox1.Text = Convert.ToString(Round(lambda0, 5));
+                        }
+
+                        if (lambda != 0 & z != 0)
+                        {
+                            lambda0 = (z * lambda) / (1 + z);
+                            metroTextBox3.Text = Convert.ToString(Round(lambda0, 5));
+                        }
+                    }
+
+                    if (r == 0 & Vr != 0 & H != 0)
+                    {
+                        r = Vr / H;
+                        metroTextBox2.Text = Convert.ToString(Round(r, 5));
                     }
                 }
                 finally
@@ -669,38 +941,7 @@ namespace astranomija
 
                 }
             }
-
-            if (coordinates.Checked)
-            {
-                double phi, delta, hup, hdown;
-
-                bool v1 = double.TryParse(metroTextBox1.Text, out phi);
-                //bool v2 = double.TryParse(metroTextBox2.Text, out );
-                bool v3 = double.TryParse(metroTextBox3.Text, out delta);
-                //bool v4 = double.TryParse(metroTextBox4.Text, out );
-                bool v5 = double.TryParse(metroTextBox5.Text, out hup);
-                //bool v6 = double.TryParse(metroTextBox6.Text, out );
-                bool v7 = double.TryParse(metroTextBox7.Text, out hdown);
-                //bool v8 = double.TryParse(metroTextBox8.Text, out );
-                //bool v9 = double.TryParse(metroTextBox9.Text, out );
-                //bool v10 = double.TryParse(metroTextBox10.Text, out );
-                //bool v11 = double.TryParse(metroTextBox11.Text, out );
-                //bool v12 = double.TryParse(metroTextBox12.Text, out );
-                //bool v13 = int.TryParse(metroTextBox13.Text, out );
-                //bool v14 = int.TryParse(metroTextBox14.Text, out );
-
-                if (phi == 0)
-                {
-                    if (delta != 0 & hup != 0)
-                    {
-                        phi = 90 - hup + delta;
-                    }
-
-
-                }
-            }
         }
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         private void metroTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -827,10 +1068,37 @@ namespace astranomija
             }
         }
 
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         private void kepler_CheckedChanged(object sender, EventArgs e)
         {
             clear_Click(sender, e);
+
+            metroTextBox13.Visible = true;
+
+            metroTextBox2.Visible = true;
+            metroTextBox4.Visible = true;
+            metroTextBox6.Visible = true;
+            metroTextBox8.Visible = true;
+            metroTextBox10.Visible = true;
+            metroTextBox12.Visible = true;
+            metroTextBox14.Visible = true;
+
+            comboBox1.Visible = true;
+            comboBox3.Visible = true;
+            comboBox5.Visible = true;
+            comboBox7.Visible = true;
+            comboBox2.Visible = true;
+            comboBox4.Visible = true;
+            comboBox6.Visible = true;
+            comboBox8.Visible = true;
+            comboBox10.Visible = false;
+
+            metroLabel2.Visible = true;
+            metroLabel4.Visible = true;
+            metroLabel6.Visible = true;
+            metroLabel8.Visible = true;
+            metroLabel10.Visible = true;
+            metroLabel12.Visible = true;
+
             metroLabel1.Text = "a =";
             metroLabel3.Text = "T =";
             metroLabel5.Text = "Q =";
@@ -844,11 +1112,55 @@ namespace astranomija
             metroLabel8.Text = "q =";
             metroLabel10.Text = "e =";
             metroLabel12.Text = "M =";
+
+            combobox_clear();
+
+            comboBox1.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox3.Items.AddRange(new string[] { "Сэкунда", "Гадзіна", "Содні", "Год" });
+            comboBox5.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox7.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+
+            comboBox2.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox4.Items.AddRange(new string[] { "Сэкунда", "Гадзіна", "Содні", "Год" });
+            comboBox6.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox8.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox10.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+
+            combobox_zeroitem();
         }
 
         private void satellite_CheckedChanged(object sender, EventArgs e)
         {
             clear_Click(sender, e);
+            combobox_clear();
+
+            metroTextBox13.Visible = true;
+
+            metroTextBox2.Visible = true;
+            metroTextBox4.Visible = true;
+            metroTextBox6.Visible = true;
+            metroTextBox8.Visible = true;
+            metroTextBox10.Visible = true;
+            metroTextBox12.Visible = false;
+            metroTextBox14.Visible = false;
+
+            comboBox1.Visible = true;
+            comboBox3.Visible = true;
+            comboBox5.Visible = true;
+            comboBox7.Visible = true;
+            comboBox2.Visible = true;
+            comboBox4.Visible = true;
+            comboBox6.Visible = true;
+            comboBox8.Visible = true;
+            comboBox10.Visible = true;
+
+            metroLabel2.Visible = true;
+            metroLabel4.Visible = true;
+            metroLabel6.Visible = true;
+            metroLabel8.Visible = true;
+            metroLabel10.Visible = true;
+            metroLabel12.Visible = false;
+
             metroLabel1.Text = "a =";
             metroLabel3.Text = "T =";
             metroLabel5.Text = "Q =";
@@ -861,25 +1173,67 @@ namespace astranomija
             metroLabel6.Text = "Vq =";
             metroLabel8.Text = "Vh =";
             metroLabel10.Text = "h =";
-            metroLabel12.Text = "";
+
+            comboBox1.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox3.Items.AddRange(new string[] { "Сэкунда", "Гадзіна", "Содні", "Год" });
+            comboBox5.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+            comboBox7.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+
+            comboBox2.Items.AddRange(new string[] { "м/с", "км/с", "км/г" });
+            comboBox4.Items.AddRange(new string[] { "м/с", "км/с", "км/г" });
+            comboBox6.Items.AddRange(new string[] { "м/с", "км/с", "км/г" });
+            comboBox8.Items.AddRange(new string[] { "м/с", "км/с", "км/г" });
+            comboBox10.Items.AddRange(new string[] { "Мэтар", "Кілямэтр", "a.a." });
+
+            combobox_zeroitem();
         }
 
         private void dopler_CheckedChanged(object sender, EventArgs e)
         {
             clear_Click(sender, e);
+
+            metroTextBox13.Visible = false;
+
+            metroTextBox2.Visible = true;
+            metroTextBox4.Visible = false;
+            metroTextBox6.Visible = false;
+            metroTextBox8.Visible = false;
+            metroTextBox10.Visible = false;
+            metroTextBox12.Visible = false;
+            metroTextBox14.Visible = false;
+
+            comboBox1.Visible = false;
+            comboBox3.Visible = false;
+            comboBox5.Visible = false;
+            comboBox7.Visible = false;
+            comboBox2.Visible = false;
+            comboBox4.Visible = false;
+            comboBox6.Visible = false;
+            comboBox8.Visible = false;
+            comboBox10.Visible = false;
+
+            metroLabel2.Visible = true;
+            metroLabel4.Visible = false;
+            metroLabel6.Visible = false;
+            metroLabel8.Visible = false;
+            metroLabel10.Visible = false;
+            metroLabel12.Visible = false;
+
             metroLabel1.Text = "λ =";
             metroLabel3.Text = "λ0 =";
             metroLabel5.Text = "T =";
             metroLabel7.Text = "Vr =";
             metroLabel9.Text = "Z =";
-            metroLabel11.Text = "";
+            metroLabel11.Text = "H =";
 
-            metroLabel2.Text = "";
+            metroLabel2.Text = "r =";
             metroLabel4.Text = "";
             metroLabel6.Text = "";
             metroLabel8.Text = "";
             metroLabel10.Text = "";
             metroLabel12.Text = "";
+
+            combobox_clear();
         }
 
         private void telescopes_CheckedChanged(object sender, EventArgs e)
@@ -895,14 +1249,41 @@ namespace astranomija
             metroLabel2.Text = "A =";
             metroLabel4.Text = "Ɐ =";
             metroLabel6.Text = "α″ =";
-            metroLabel8.Text = "";
-            metroLabel10.Text = "";
-            metroLabel12.Text = "";
+
+            metroTextBox13.Visible = false;
+
+            metroTextBox2.Visible = true;
+            metroTextBox4.Visible = true;
+            metroTextBox6.Visible = true;
+            metroTextBox8.Visible = false;
+            metroTextBox10.Visible = false;
+            metroTextBox12.Visible = false;
+            metroTextBox14.Visible = false;
+
+            comboBox1.Visible = false;
+            comboBox3.Visible = false;
+            comboBox5.Visible = false;
+            comboBox7.Visible = false;
+            comboBox2.Visible = false;
+            comboBox4.Visible = false;
+            comboBox6.Visible = false;
+            comboBox8.Visible = false;
+            comboBox10.Visible = false;
+
+            metroLabel2.Visible = true;
+            metroLabel4.Visible = true;
+            metroLabel6.Visible = true;
+            metroLabel8.Visible = false;
+            metroLabel10.Visible = false;
+            metroLabel12.Visible = false;
+
+            combobox_clear();
         }
 
         private void coordinates_CheckedChanged(object sender, EventArgs e)
         {
             clear_Click(sender, e);
+
             metroLabel1.Text = "";
             metroLabel3.Text = "";
             metroLabel5.Text = "";
@@ -916,6 +1297,8 @@ namespace astranomija
             metroLabel8.Text = "";
             metroLabel10.Text = "";
             metroLabel12.Text = "";
+
+            combobox_clear();
         }
     }
 }

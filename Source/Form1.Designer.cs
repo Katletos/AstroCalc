@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.calculate = new MetroFramework.Controls.MetroButton();
             this.kepler = new MetroFramework.Controls.MetroRadioButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
@@ -35,11 +36,6 @@
             this.dopler = new MetroFramework.Controls.MetroRadioButton();
             this.telescopes = new MetroFramework.Controls.MetroRadioButton();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.coordinates = new MetroFramework.Controls.MetroRadioButton();
-            this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
-            this.metroRadioButton5 = new MetroFramework.Controls.MetroRadioButton();
-            this.metroRadioButton6 = new MetroFramework.Controls.MetroRadioButton();
-            this.metroRadioButton7 = new MetroFramework.Controls.MetroRadioButton();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox4 = new MetroFramework.Controls.MetroTextBox();
@@ -73,6 +69,7 @@
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // calculate
@@ -90,7 +87,7 @@
             this.kepler.Location = new System.Drawing.Point(20, 60);
             this.kepler.Name = "kepler";
             this.kepler.Size = new System.Drawing.Size(114, 15);
-            this.kepler.Style = MetroFramework.MetroColorStyle.Red;
+            this.kepler.Style = MetroFramework.MetroColorStyle.Blue;
             this.kepler.TabIndex = 4;
             this.kepler.TabStop = true;
             this.kepler.Text = "Законы Кеплера";
@@ -115,7 +112,7 @@
             this.satellite.Location = new System.Drawing.Point(20, 80);
             this.satellite.Name = "satellite";
             this.satellite.Size = new System.Drawing.Size(98, 15);
-            this.satellite.Style = MetroFramework.MetroColorStyle.Red;
+            this.satellite.Style = MetroFramework.MetroColorStyle.Blue;
             this.satellite.TabIndex = 6;
             this.satellite.TabStop = true;
             this.satellite.Text = "Спадарожнікі";
@@ -140,8 +137,8 @@
             this.telescopes.Location = new System.Drawing.Point(20, 100);
             this.telescopes.Name = "telescopes";
             this.telescopes.Size = new System.Drawing.Size(84, 15);
+            this.telescopes.Style = MetroFramework.MetroColorStyle.Blue;
             this.telescopes.TabIndex = 8;
-            this.telescopes.TabStop = true;
             this.telescopes.Text = "Тэлескопы";
             this.telescopes.UseVisualStyleBackColor = true;
             this.telescopes.CheckedChanged += new System.EventHandler(this.telescopes_CheckedChanged);
@@ -154,62 +151,6 @@
             this.metroTextBox2.TabIndex = 9;
             this.metroTextBox2.Tag = "";
             this.metroTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox2_KeyPress);
-            // 
-            // coordinates
-            // 
-            this.coordinates.AutoSize = true;
-            this.coordinates.Location = new System.Drawing.Point(20, 140);
-            this.coordinates.Name = "coordinates";
-            this.coordinates.Size = new System.Drawing.Size(149, 15);
-            this.coordinates.TabIndex = 11;
-            this.coordinates.TabStop = true;
-            this.coordinates.Text = "Нябесныя каардынаты";
-            this.coordinates.UseVisualStyleBackColor = true;
-            this.coordinates.CheckedChanged += new System.EventHandler(this.coordinates_CheckedChanged);
-            // 
-            // metroRadioButton2
-            // 
-            this.metroRadioButton2.AutoSize = true;
-            this.metroRadioButton2.Location = new System.Drawing.Point(20, 160);
-            this.metroRadioButton2.Name = "metroRadioButton2";
-            this.metroRadioButton2.Size = new System.Drawing.Size(127, 15);
-            this.metroRadioButton2.TabIndex = 12;
-            this.metroRadioButton2.TabStop = true;
-            this.metroRadioButton2.Text = "metroRadioButton2";
-            this.metroRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // metroRadioButton5
-            // 
-            this.metroRadioButton5.AutoSize = true;
-            this.metroRadioButton5.Location = new System.Drawing.Point(20, 180);
-            this.metroRadioButton5.Name = "metroRadioButton5";
-            this.metroRadioButton5.Size = new System.Drawing.Size(127, 15);
-            this.metroRadioButton5.TabIndex = 13;
-            this.metroRadioButton5.TabStop = true;
-            this.metroRadioButton5.Text = "metroRadioButton5";
-            this.metroRadioButton5.UseVisualStyleBackColor = true;
-            // 
-            // metroRadioButton6
-            // 
-            this.metroRadioButton6.AutoSize = true;
-            this.metroRadioButton6.Location = new System.Drawing.Point(20, 200);
-            this.metroRadioButton6.Name = "metroRadioButton6";
-            this.metroRadioButton6.Size = new System.Drawing.Size(127, 15);
-            this.metroRadioButton6.TabIndex = 14;
-            this.metroRadioButton6.TabStop = true;
-            this.metroRadioButton6.Text = "metroRadioButton6";
-            this.metroRadioButton6.UseVisualStyleBackColor = true;
-            // 
-            // metroRadioButton7
-            // 
-            this.metroRadioButton7.AutoSize = true;
-            this.metroRadioButton7.Location = new System.Drawing.Point(20, 220);
-            this.metroRadioButton7.Name = "metroRadioButton7";
-            this.metroRadioButton7.Size = new System.Drawing.Size(127, 15);
-            this.metroRadioButton7.TabIndex = 15;
-            this.metroRadioButton7.TabStop = true;
-            this.metroRadioButton7.Text = "metroRadioButton7";
-            this.metroRadioButton7.UseVisualStyleBackColor = true;
             // 
             // metroLabel4
             // 
@@ -317,7 +258,6 @@
             this.metroTextBox13.Name = "metroTextBox13";
             this.metroTextBox13.Size = new System.Drawing.Size(50, 23);
             this.metroTextBox13.TabIndex = 32;
-            this.metroTextBox13.Text = "10^n";
             this.metroTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox13_KeyPress);
             // 
             // metroLabel1
@@ -366,16 +306,11 @@
             this.metroTextBox14.Name = "metroTextBox14";
             this.metroTextBox14.Size = new System.Drawing.Size(50, 23);
             this.metroTextBox14.TabIndex = 40;
-            this.metroTextBox14.Text = "10^n";
             this.metroTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox14_KeyPress);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Мэтар",
-            "Кілямэтр",
-            "а. а."});
             this.comboBox1.Location = new System.Drawing.Point(455, 60);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(80, 21);
@@ -384,11 +319,6 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Сэкунда",
-            "Гадзіна",
-            "Содні",
-            "Год"});
             this.comboBox3.Location = new System.Drawing.Point(455, 100);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(80, 21);
@@ -415,7 +345,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(750, 60);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(80, 21);
             this.comboBox2.TabIndex = 45;
             // 
             // comboBox4
@@ -423,7 +353,7 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(750, 100);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.Size = new System.Drawing.Size(80, 21);
             this.comboBox4.TabIndex = 46;
             // 
             // comboBox6
@@ -431,7 +361,7 @@
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(750, 140);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
+            this.comboBox6.Size = new System.Drawing.Size(80, 21);
             this.comboBox6.TabIndex = 47;
             // 
             // comboBox8
@@ -439,7 +369,7 @@
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(750, 180);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8.Size = new System.Drawing.Size(80, 21);
             this.comboBox8.TabIndex = 48;
             // 
             // clear
@@ -511,12 +441,21 @@
             this.metroLabel12.Text = "M =";
             this.metroLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // comboBox10
+            // 
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(750, 220);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(80, 21);
+            this.comboBox10.TabIndex = 56;
+            // 
             // Form1
             // 
             this.AccessibleDescription = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 510);
+            this.Controls.Add(this.comboBox10);
             this.Controls.Add(this.metroLabel12);
             this.Controls.Add(this.metroLabel11);
             this.Controls.Add(this.metroLabel10);
@@ -550,21 +489,17 @@
             this.Controls.Add(this.metroTextBox4);
             this.Controls.Add(this.metroTextBox3);
             this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.metroRadioButton7);
-            this.Controls.Add(this.metroRadioButton6);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroTextBox2);
-            this.Controls.Add(this.metroRadioButton5);
-            this.Controls.Add(this.metroRadioButton2);
-            this.Controls.Add(this.coordinates);
             this.Controls.Add(this.telescopes);
             this.Controls.Add(this.dopler);
             this.Controls.Add(this.calculate);
             this.Controls.Add(this.satellite);
             this.Controls.Add(this.kepler);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Style = MetroFramework.MetroColorStyle.Red;
+            this.Style = MetroFramework.MetroColorStyle.Blue;
             this.Tag = "";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -579,11 +514,6 @@
         private MetroFramework.Controls.MetroRadioButton satellite;
         private MetroFramework.Controls.MetroRadioButton dopler;
         private MetroFramework.Controls.MetroRadioButton telescopes;      
-        private MetroFramework.Controls.MetroRadioButton coordinates;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton2;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton5;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton6;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton7;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroTextBox metroTextBox2;
         private MetroFramework.Controls.MetroTextBox metroTextBox3;
@@ -619,5 +549,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel metroLabel12;
+        private System.Windows.Forms.ComboBox comboBox10;
     }
 }
