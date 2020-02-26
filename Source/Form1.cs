@@ -77,7 +77,7 @@ namespace astranomija
 
         private void calculate_Click(object sender, EventArgs e)
         {
-            double G = Pow(6.67430, -11);
+            double G = 6.67430 * Pow(10, -11);
             double c = 299792458;
             double b = 0.002897;
 
@@ -274,7 +274,7 @@ namespace astranomija
 
                         if (a != 0 & Q != 0)
                         {
-                            E = (Q / a) - 2;
+                            E = (Q / a) - 1;
                             metroTextBox9.Text = Convert.ToString(Round(E, 5));
                         }
                     }
@@ -552,7 +552,7 @@ namespace astranomija
 
                         if (a1 != 0 & Q1 != 0)
                         {
-                            e1 = (Q1 / a1) - 2;
+                            e1 = (Q1 / a1) - 1;
                             metroTextBox9.Text = Convert.ToString(Round(e1, 5));
                         }
                     }
@@ -725,13 +725,13 @@ namespace astranomija
             {
                 double z, lambda, lambda0, Vr, H, T, r;
 
-                bool v1 = double.TryParse(metroTextBox1.Text, out lambda);
+                double.TryParse(metroTextBox1.Text, out lambda);
                 double.TryParse(metroTextBox2.Text, out r);
-                bool v2 = double.TryParse(metroTextBox3.Text, out lambda0);
-                bool v3 = double.TryParse(metroTextBox5.Text, out T);
-                bool v4 = double.TryParse(metroTextBox7.Text, out Vr);
-                bool v5 = double.TryParse(metroTextBox11.Text, out z);
-                bool v6 = double.TryParse(metroTextBox13.Text, out H);
+                double.TryParse(metroTextBox3.Text, out lambda0);
+                double.TryParse(metroTextBox5.Text, out T);
+                double.TryParse(metroTextBox7.Text, out Vr);
+                double.TryParse(metroTextBox11.Text, out z);
+                double.TryParse(metroTextBox13.Text, out H);
 
                 lambda = lambda * Pow(10, -9);
                 lambda0 = lambda0 * Pow(10, -9);
@@ -785,13 +785,13 @@ namespace astranomija
                         if (T != 0)
                         {
                             lambda0 = b / T;
-                            metroTextBox1.Text = Convert.ToString(Round(lambda0, 5));
+                            metroTextBox3.Text = Convert.ToString(lambda0);
                         }
 
                         if (lambda != 0 & z != 0)
                         {
                             lambda0 = (z * lambda) / (1 + z);
-                            metroTextBox3.Text = Convert.ToString(Round(lambda0, 5));
+                            metroTextBox3.Text = Convert.ToString(lambda0);
                         }
                     }
 
