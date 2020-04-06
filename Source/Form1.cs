@@ -225,6 +225,21 @@ namespace AstroCalc
                         textBox1.Text = Convert.ToString(Round(x / 149597870700, 5));
                     }
                 }
+                else if (n == 2)
+                {
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+                        textBox2.Text = Convert.ToString(Round(x, 5));
+                    }
+                    else if (comboBox2.SelectedIndex == 1)
+                    {
+                        textBox2.Text = Convert.ToString(Round(x / 1000, 5));
+                    }
+                    else if (comboBox2.SelectedIndex == 2)
+                    {
+                        textBox2.Text = Convert.ToString(Round(x * 3.6, 5));
+                    }
+                }
                 else if (n == 3)
                 {
                     if (comboBox3.SelectedIndex == 0)
@@ -244,6 +259,21 @@ namespace AstroCalc
                         textBox3.Text = Convert.ToString(Round(x / 31470774.5, 5));
                     }
                 }
+                else if (n == 4)
+                {
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+                        textBox4.Text = Convert.ToString(Round(x, 5));
+                    }
+                    else if (comboBox4.SelectedIndex == 1)
+                    {
+                        textBox4.Text = Convert.ToString(Round(x / 1000, 5));
+                    }
+                    else if (comboBox4.SelectedIndex == 2)
+                    {
+                        textBox4.Text = Convert.ToString(Round(x * 3.6, 5));
+                    }
+                }
                 else if (n == 5)
                 {
                     if (comboBox5.SelectedIndex == 0)
@@ -259,6 +289,21 @@ namespace AstroCalc
                         textBox5.Text = Convert.ToString(Round(x / 149597870700, 5));
                     }
                 }
+                else if (n == 6)
+                {
+                    if (comboBox6.SelectedIndex == 0)
+                    {
+                        textBox6.Text = Convert.ToString(Round(x, 5));
+                    }
+                    else if (comboBox6.SelectedIndex == 1)
+                    {
+                        textBox6.Text = Convert.ToString(Round(x / 1000, 5));
+                    }
+                    else if (comboBox6.SelectedIndex == 2)
+                    {
+                        textBox6.Text = Convert.ToString(Round(x * 3.6, 5));
+                    }
+                }
                 else if (n == 7)
                 {
                     if (comboBox7.SelectedIndex == 0)
@@ -272,6 +317,36 @@ namespace AstroCalc
                     else if (comboBox7.SelectedIndex == 2)
                     {
                         textBox7.Text = Convert.ToString(Round(x / 149597870700, 5));
+                    }
+                }
+                else if (n == 8)
+                {
+                    if (comboBox8.SelectedIndex == 0)
+                    {
+                        textBox8.Text = Convert.ToString(Round(x, 5));
+                    }
+                    else if (comboBox8.SelectedIndex == 1)
+                    {
+                        textBox8.Text = Convert.ToString(Round(x / 1000, 5));
+                    }
+                    else if (comboBox8.SelectedIndex == 2)
+                    {
+                        textBox8.Text = Convert.ToString(Round(x * 3.6, 5));
+                    }
+                }
+                else if (n == 10)
+                {
+                    if (comboBox10.SelectedIndex == 0)
+                    {
+                        textBox10.Text = Convert.ToString(Round(x, 5));
+                    }
+                    else if (comboBox10.SelectedIndex == 1)
+                    {
+                        textBox10.Text = Convert.ToString(Round(x / 1000, 5));
+                    }
+                    else if (comboBox10.SelectedIndex == 2)
+                    {
+                        textBox10.Text = Convert.ToString(Round(x / 149597870700, 5));
                     }
                 }
             }
@@ -317,7 +392,7 @@ namespace AstroCalc
                     }
                     else if (comboBox2.SelectedIndex == 2)
                     {
-                        V0 *= 3.6;
+                        V0 /= 3.6;
                     }
 
                     if (comboBox3.SelectedIndex == 1)
@@ -339,7 +414,7 @@ namespace AstroCalc
                     }
                     else if (comboBox4.SelectedIndex == 2)
                     {
-                        VQ *= 3.6;
+                        VQ /= 3.6;
                     }
 
                     if (comboBox5.SelectedIndex == 1)
@@ -357,7 +432,7 @@ namespace AstroCalc
                     }
                     else if (comboBox6.SelectedIndex == 2)
                     {
-                        Vq *= 3.6;
+                        Vq /= 3.6;
                     }
 
                     if (comboBox7.SelectedIndex == 1)
@@ -375,7 +450,7 @@ namespace AstroCalc
                     }
                     else if (comboBox8.SelectedIndex == 2)
                     {
-                        Vr *= 3.6;
+                        Vr /= 3.6;
                     }
 
                     if (comboBox7.SelectedIndex == 1)
@@ -446,7 +521,6 @@ namespace AstroCalc
                             q = 2 * a - Q;
                             Converting(q, 7);
                         }
-
                     }
 
                     if (Q == 0)
@@ -479,7 +553,7 @@ namespace AstroCalc
                         if (a != 0 & T != 0)
                         {
                             V0 = 2 * PI * a / T;
-                            textBox2.Text = Convert.ToString(Round(V0, 5));
+                            Converting(V0, 2);
                         }
                     }
 
@@ -488,7 +562,7 @@ namespace AstroCalc
                         if (Q != 0 & a != 0 & M != 0)
                         {
                             VQ = Sqrt(G * M * (2 / Q - 1 / a));
-                            textBox4.Text = Convert.ToString(Round(VQ, 5));
+                            Converting(VQ, 4);
                         }
                     }
 
@@ -497,7 +571,7 @@ namespace AstroCalc
                         if (q != 0 & a != 0 & M != 0)
                         {
                             Vq = Sqrt(G * M * (2 / q - 1 / a));
-                            textBox6.Text = Convert.ToString(Round(Vq, 5));
+                            Converting(Vq, 6);
                         }
                     }
 
@@ -505,8 +579,8 @@ namespace AstroCalc
                     {
                         if (a != 0 & M != 0 & r != 0)
                         {
-                            Vr = Sqrt(G * M * (2 / r - 1 / a));
-                            textBox8.Text = Convert.ToString(Round(Vq, 5));
+                            Vr = Sqrt(G * M * ((2 / r) - (1 / a)));
+                            Converting(Vr, 8);
                         }
                     }
 
@@ -514,21 +588,20 @@ namespace AstroCalc
                     {
                         if (M != 0 & a != 0 & Vr != 0)
                         {
-                            r = 2 * G * M * a / (Pow(Vr, 2) + G * M);
-                            textBox10.Text = Convert.ToString(Round(r, 5));
+                            r = 2 * G * M * a / (Pow(Vr, 2) * a + G * M);
+                            Converting(r, 10);
                         }
                     }
                 }
                 finally
                 {
-                    n = 0;
                     double[] arr = { a, Q, q, T, M, E, Vq, VQ, r, V0, Vr };
                     for (int i = 0; i < arr.Length; i++)
                     {
                         arr[i] = 0;
                     }
                 }
-            }//+-
+            }//++
 
             if (kepler.Checked)
             {
@@ -686,7 +759,7 @@ namespace AstroCalc
                         else if (a1 != 0 & Q1 != 0)
                         {
                             q1 = 2 * a1 - Q1;
-                            Converting(q1,7);
+                            Converting(q1, 7);
                         }
                     }
 
@@ -823,13 +896,11 @@ namespace AstroCalc
                     if (a2 != 0 & M2 != 0 & T2 == 0)
                     {
                         T2 = Sqrt(Pow(a2, 3) * 4 * Pow(PI, 2) / G / M2);
-                        Converting(T1, 4);
+                        Converting(T2, 4);
                     }
                 }
                 finally
                 {
-                    n1 = 0;
-                    n2 = 0;
                     double[] arr = {a1, T1, Q1, q1, e1, M1,
                                     a2, T2, Q2, q2, e2, M2};
                     for (int i = 0; i < arr.Length; i++)
