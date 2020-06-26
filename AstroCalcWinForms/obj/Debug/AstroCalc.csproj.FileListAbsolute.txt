@@ -1,0 +1,9 @@
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.csprojAssemblyReference.cache
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.Form1.resources
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.Properties.Resources.resources
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.csproj.GenerateResource.cache
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\bin\Debug\AstroCalc.exe.config
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\bin\Debug\AstroCalc.exe
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\bin\Debug\AstroCalc.pdb
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.exe
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalc\obj\Debug\AstroCalc.pdb
