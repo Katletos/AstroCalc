@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+
 
 namespace AstroCalcWPF
 {
@@ -23,6 +11,18 @@ namespace AstroCalcWPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Satellite_Checked(object sender, RoutedEventArgs e)
+        {
+            FrameWithinGrid.Navigate(new System.Uri("Satellite.xaml",
+            System.UriKind.RelativeOrAbsolute));
+        }
+
+        private void Teleskopes_Checked(object sender, RoutedEventArgs e)
+        {
+            FrameWithinGrid.Navigate(new System.Uri("Telescopes.xaml",
+           System.UriKind.RelativeOrAbsolute));
         }
     }
 }

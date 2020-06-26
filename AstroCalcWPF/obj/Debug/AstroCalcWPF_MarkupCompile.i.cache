@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\
 AstroCalcWPF
 none
 false
 DEBUG;TRACE
-C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\App.xaml
-2-1549303810
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\App.xaml
+3-420650352
 
-7-372311466
+8589175965
 13-1505183044
-Kepler.xaml;MainWindow.xaml;
+Satellite.xaml;MainWindow.xaml;Telescopes.xaml;
 
-False
+True
 

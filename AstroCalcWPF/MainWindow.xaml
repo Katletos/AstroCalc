@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AstroCalcWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="Auto" Width="Auto">
+        Title="AstroCalc" Height="Auto" Width="Auto">
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <RadioButton x:Name="kepler"     Content="RadioButton" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
-            <RadioButton x:Name="sattelites" Content="RadioButton" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+            <RadioButton x:Name="satellite"  Content="Спадарожнікі" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Checked="Satellite_Checked"/>
+            <RadioButton x:Name="teleskopes" Content="RadioButton" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Checked="Teleskopes_Checked"/>
             <RadioButton x:Name="dopler"     Content="RadioButton" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
             <RadioButton x:Name="telescopes" Content="RadioButton" Grid.Column="0" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
         </StackPanel>
@@ -31,7 +31,7 @@
                 Margin="10" >
         </Button>
 
-        <Frame  Grid.Column="1"></Frame>
+        <Frame  Grid.Column="1" x:Name="FrameWithinGrid" NavigationUIVisibility="Hidden" Width="auto" Height="auto"></Frame>
 
     </Grid>
 </Window>
