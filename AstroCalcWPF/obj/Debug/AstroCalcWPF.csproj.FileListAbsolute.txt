@@ -1,0 +1,14 @@
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\bin\Debug\AstroCalcWPF.exe.config
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\bin\Debug\AstroCalcWPF.exe
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\bin\Debug\AstroCalcWPF.pdb
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.csprojAssemblyReference.cache
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\MainWindow.g.cs
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\App.g.cs
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF_MarkupCompile.cache
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF_MarkupCompile.lref
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\MainWindow.baml
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.g.resources
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.Properties.Resources.resources
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.csproj.GenerateResource.cache
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.exe
+C:\Users\0x00\Desktop\проект\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.pdb
