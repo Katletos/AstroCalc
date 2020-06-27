@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 
 namespace AstroCalcWPF
@@ -15,14 +16,26 @@ namespace AstroCalcWPF
 
         private void Satellite_Checked(object sender, RoutedEventArgs e)
         {
-            FrameWithinGrid.Navigate(new System.Uri("Satellite.xaml",
-            System.UriKind.RelativeOrAbsolute));
+            FrameWithinGrid.Navigate(new Uri("Satellite.xaml",
+            UriKind.RelativeOrAbsolute));
+        }
+
+        private void Stellarium_Checked(object sender, RoutedEventArgs e)
+        {
+            // FrameWithinGrid.Source = new Uri("https://stellarium-web.org/", UriKind.Absolute);
+
+            wbSample.Navigate("https://stellarium-web.org/");
         }
 
         private void Teleskopes_Checked(object sender, RoutedEventArgs e)
         {
-            FrameWithinGrid.Navigate(new System.Uri("Telescopes.xaml",
-           System.UriKind.RelativeOrAbsolute));
+            FrameWithinGrid.Navigate(new Uri("Telescopes.xaml",
+            UriKind.RelativeOrAbsolute));
+        }
+
+        private void wbSample_Navigating(object sender, System.Windows.Navigation.NavigatingCancelEventArgs e)
+        {
+
         }
     }
 }
