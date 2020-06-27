@@ -31,3 +31,5 @@ C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.Pro
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\AstroCalcWPF.csproj.GenerateResource.cache
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Telescopes.g.cs
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Telescopes.baml
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Stellarium.g.cs
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Stellarium.baml

@@ -31,13 +31,8 @@
                 Margin="10" >
         </Button>
 
-        <Frame  Grid.Column="1" x:Name="FrameWithinGrid" NavigationUIVisibility="Hidden" Width="auto" Height="auto">
-           
-            
-        </Frame>
-
-        <WebBrowser Grid.Column="1" Name="wbSample"  Navigating="wbSample_Navigating"></WebBrowser>
-        
+        <Frame  Grid.Column="1" x:Name="FrameWithinGrid" NavigationUIVisibility="Hidden" Width="auto" Height="auto"></Frame>
+ 
     </Grid>
 </Window>
     
