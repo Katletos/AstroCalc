@@ -24,11 +24,11 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <TextBox x:Name="TextBox1" Width="100" Height="22" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox3" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox5" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox7" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox9" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox1" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="22" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox3" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox5" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox7" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox9" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
             </StackPanel>
 
             <StackPanel Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -45,11 +45,11 @@
             </StackPanel>
 
             <StackPanel Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <TextBox x:Name="TextBox2" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox4" Width="100" Height="22" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox6" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox8" Width="100" Height="30" Margin="5"></TextBox>
-                <TextBox x:Name="TextBox10" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox2" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox4" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="22" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox6" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox8" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
+                <TextBox x:Name="TextBox10" PreviewTextInput="TextBox_PreviewTextInput" Width="100" Height="30" Margin="5"></TextBox>
             </StackPanel>
 
             <StackPanel Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Top">

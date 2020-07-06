@@ -33,3 +33,25 @@ C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Telescopes.g.cs
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Telescopes.baml
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Stellarium.g.cs
 C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcWPF\obj\Debug\Stellarium.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.exe
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.pdb
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\bin\Debug\AstroCalcWPF.exe.config
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\bin\Debug\AstroCalcWPF.exe
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\bin\Debug\AstroCalcWPF.pdb
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.csprojAssemblyReference.cache
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Stellarium.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\App.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Satellite.g.cs
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Stellarium.g.cs
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Telescopes.g.cs
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\App.g.cs
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF_MarkupCompile.cache
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF_MarkupCompile.lref
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Satellite.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\MainWindow.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\Telescopes.baml
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.g.resources
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.Properties.Resources.resources
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.csproj.GenerateResource.cache
+C:\Users\Кабинет 209\Desktop\AstroCalc-master\AstroCalcWPF\obj\Debug\AstroCalcWPF.csproj.CoreCompileInputs.cache
