@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroCalc.Server", "Server\AstroCalc.Server.csproj", "{BE00176A-8D55-4265-BC58-1B6ED45362AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroCalc.Client", "Client\AstroCalc.Client.csproj", "{95276C99-EAAE-4B72-97D9-0D17F9BDE387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroCalc.Shared", "Shared\AstroCalc.Shared.csproj", "{D285DB74-3EE4-403F-89FA-828755E6B13B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Debug|x64.ActiveCfg = Debug|x64
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Debug|x64.Build.0 = Debug|x64
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Release|x64.ActiveCfg = Release|x64
+		{BE00176A-8D55-4265-BC58-1B6ED45362AA}.Release|x64.Build.0 = Release|x64
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Debug|x64.ActiveCfg = Debug|x64
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Debug|x64.Build.0 = Debug|x64
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Release|x64.ActiveCfg = Release|x64
+		{95276C99-EAAE-4B72-97D9-0D17F9BDE387}.Release|x64.Build.0 = Release|x64
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Debug|x64.ActiveCfg = Debug|x64
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Debug|x64.Build.0 = Debug|x64
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Release|x64.ActiveCfg = Release|x64
+		{D285DB74-3EE4-403F-89FA-828755E6B13B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5E5BE34-EDA1-4E0E-A39E-3BE48BFB8544}
+	EndGlobalSection
+EndGlobal

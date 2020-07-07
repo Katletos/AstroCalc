@@ -1,0 +1,8 @@
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\bin\x64\Debug\netstandard2.1\AstroCalc.Shared.deps.json
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\bin\x64\Debug\netstandard2.1\AstroCalc.Shared.dll
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\bin\x64\Debug\netstandard2.1\AstroCalc.Shared.pdb
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\obj\x64\Debug\netstandard2.1\AstroCalc.Shared.AssemblyInfoInputs.cache
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\obj\x64\Debug\netstandard2.1\AstroCalc.Shared.AssemblyInfo.cs
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\obj\x64\Debug\netstandard2.1\AstroCalc.Shared.csproj.CoreCompileInputs.cache
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\obj\x64\Debug\netstandard2.1\AstroCalc.Shared.dll
+C:\Users\0x00\Documents\GitHub\AstroCalc\AstroCalcBlazor\AstroCalc\Shared\obj\x64\Debug\netstandard2.1\AstroCalc.Shared.pdb
